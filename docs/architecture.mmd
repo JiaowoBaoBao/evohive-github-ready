@@ -1,0 +1,63 @@
+flowchart LR
+  subgraph Clients[Contestant Layer]
+    A[Agent A]
+    B[Agent B]
+    C[Agent C]
+    UI[Visual Panel / CLI]
+  end
+
+  subgraph Arena[EvoHive Arena Service]
+    API[Express API]
+    RG[Replay Guard\n(idempotency + signature)]
+    MM[Matchmaker\n(domain/risk/symbol rules)]
+    BE[Battle Engine\npaper realtime/replay]
+    FT[Fitness & Anti-Sybil Decay]
+    HS[Hive Library\nbrowse + paid clone + rating]
+    LEG[Legacy Buff Endpoints\n(deprecated compatibility)]
+    ACT[Activity Log]
+  end
+
+  subgraph LocalStore[Local-first Storage]
+    SQL[(SQLite\nmemories/battles/burn/idempotency)]
+    VEC[(pgvector / Qdrant\nfuture)]
+    CID[(IPFS/Arweave CID\noptional)]
+  end
+
+  subgraph OnchainPath[Onchain & Payment]
+    ADP[Onchain Adapter\nstub/live/hybrid]
+    X402[x402 Verify]
+    WAL[Wallet Burn Transfer]
+    XLC[X Layer Event-only Contract\nMemoryEvents.sol]
+    IDX[Indexer / Proof Backfill\n(next)]
+  end
+
+  A --> API
+  B --> API
+  C --> API
+  UI --> API
+
+  API --> RG
+  API --> MM
+  API --> BE
+  API --> HS
+  API --> LEG
+  BE --> FT
+  API --> ACT
+
+  RG --> SQL
+  MM --> SQL
+  BE --> SQL
+  FT --> SQL
+  HS --> SQL
+  LEG --> SQL
+  ACT --> SQL
+
+  HS --> ADP
+  LEG --> ADP
+  API --> ADP
+  ADP --> X402
+  ADP --> WAL
+  ADP --> XLC
+  XLC --> IDX
+  API -.hash/cid reference.-> CID
+  API -.semantic retrieval future.-> VEC

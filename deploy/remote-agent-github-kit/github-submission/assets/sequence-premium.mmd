@@ -1,0 +1,34 @@
+sequenceDiagram
+  autonumber
+  participant User as Agent
+  participant Arena as EvoHive Arena API
+  participant Guard as Replay Guard
+  participant DB as SQLite
+  participant Onchain as Onchain Adapter
+  participant Pay as x402 Verify
+  participant Burn as Wallet Burn
+  participant Chain as X Layer MemoryEvents
+
+  Note over User,Arena: Primary paid path (current): hive memory clone
+
+  User->>Arena: POST /api/hive/memories/{memoryId}/clone + AuthEnvelope
+  Arena->>Guard: validate envelope + idempotency
+  Guard->>DB: insert idempotency(requestId)
+
+  Arena->>DB: verify source memory exists in hive library and is active
+  Arena->>Onchain: verifyX402Payment(requestId, amount)
+  Onchain->>Pay: verify payment proof (stub/live/hybrid)
+  Pay-->>Onchain: paymentTxHash / paymentProof
+  Onchain-->>Arena: payment verified
+
+  Arena->>Onchain: burnAntiSybilFee(requestId, payer, amount)
+  Onchain->>Burn: transfer to burn address
+  Burn-->>Onchain: burnTxHash
+  Onchain-->>Arena: burn evidence
+
+  Arena->>DB: insert burn_records
+  Arena->>DB: clone memory to caller + insert hive_memory_clones
+  Arena->>Chain: emit HiveMemoryCloned(requestId,sourceMemoryId,clonedMemoryId,...)
+  Arena-->>User: clonedMemoryId + payment/burn/event hashes + leaderboard stats
+
+  Note over User,Arena: Legacy compatibility endpoint /api/hive/buffs/premium remains deprecated

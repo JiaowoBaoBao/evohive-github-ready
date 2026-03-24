@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-03-24T06:41:49.087331Z",
+  "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+  "runRequestId": "RUN_BATTLE-1774323838395-hyfbc",
+  "battle": {
+    "battle_id": "01KMEZ0HCGFDMZE1NGH853YTQK",
+    "challenger_agent": "agent-a",
+    "opponent_agent": "agent-b",
+    "memory_a": "mem_agenta_mn3k2jh8",
+    "memory_b": "mem_agentb_mn3k95lj",
+    "domain": "spot",
+    "benchmark_version": "bench-v1.2",
+    "seed": "2f6069b63b98189899347df7cf6ad85c4117d7dd2d8562c1be55b5e303125dc6",
+    "rounds": 10,
+    "status": "settled",
+    "scheduled_at": 1774323778,
+    "accepted_at": 1774323795,
+    "settled_at": 1774323838,
+    "result_json": "{\"mode\":\"paper-realtime\",\"rounds\":10,\"marketSource\":\"rest\",\"winner\":\"B\",\"scoreA\":0.722123,\"scoreB\":0.724735,\"pnlA\":0.3426,\"pnlB\":2.6349,\"maxDrawdownA\":2.2703,\"maxDrawdownB\":1.7166,\"timeoutCountA\":4,\"timeoutCountB\":2,\"traceHash\":\"0xbaaa00e443489d20a71afa7399ee4a8dd76d80b454b7d25f16b3994729de5a0b\",\"simWinner\":\"B\",\"simScoreA\":0.648676,\"simScoreB\":0.715564,\"compositeScoreA\":0.722123,\"compositeScoreB\":0.724735,\"compositeBreakdownA\":{\"final\":0.722123,\"weights\":{\"quality\":0.25,\"relevance\":0.25,\"potentialImpact\":0.2,\"novelty\":0.15,\"freshness\":0.15},\"dimensions\":{\"quality\":0.9,\"relevance\":0.688246,\"potentialImpact\":0.601206,\"novelty\":0.4,\"freshness\":0.965468},\"diagnostics\":{\"quality\":[\"meta:+0.15\",\"quant:+0.20\"],\"relevance\":{\"vectorScore01\":0.7353,\"tagHit\":2,\"activeTagCount\":4},\"potentialImpact\":{\"sim\":0.648676,\"fit\":0.5,\"typePrior\":0.58},\"novelty\":{\"maxSimilarity\":0.982644,\"nearestMemoryId\":\"mem_agentb_mn3k95lj\",\"nearestSourceAgent\":\"agent-b\"},\"freshness\":{\"ageDays\":0.3577,\"decay\":0.1}}},\"compositeBreakdownB\":{\"final\":0.724735,\"weights\":{\"quality\":0.25,\"relevance\":0.25,\"potentialImpact\":0.2,\"novelty\":0.15,\"freshness\":0.15},\"dimensions\":{\"quality\":0.9,\"relevance\":0.666518,\"potentialImpact\":0.641338,\"novelty\":0.4,\"freshness\":0.965583},\"diagnostics\":{\"quality\":[\"meta:+0.15\",\"quant:+0.20\"],\"relevance\":{\"vectorScore01\":0.7081,\"tagHit\":2,\"activeTagCount\":4},\"potentialImpact\":{\"sim\":0.715564,\"fit\":0.5,\"typePrior\":0.58},\"novelty\":{\"maxSimilarity\":0.982644,\"nearestMemoryId\":\"mem_agenta_mn3k2jh8\",\"nearestSourceAgent\":\"agent-a\"},\"freshness\":{\"ageDays\":0.3564,\"decay\":0.1}}},\"matchQuality\":{\"tier\":\"medium\",\"score\":0.65,\"benchmarkAligned\":false,\"timeframeAligned\":true,\"symbolOverlap\":1,\"riskDiff\":0},\"matchWarnings\":[\"BENCHMARK_MISMATCH\"],\"fitnessWeight\":0.5}",
+    "trace_hash": "0xbaaa00e443489d20a71afa7399ee4a8dd76d80b454b7d25f16b3994729de5a0b",
+    "result_hash": "0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c",
+    "match_mode": "sparring"
+  },
+  "result": {
+    "mode": "paper-realtime",
+    "rounds": 10,
+    "marketSource": "rest",
+    "winner": "B",
+    "scoreA": 0.722123,
+    "scoreB": 0.724735,
+    "pnlA": 0.3426,
+    "pnlB": 2.6349,
+    "maxDrawdownA": 2.2703,
+    "maxDrawdownB": 1.7166,
+    "timeoutCountA": 4,
+    "timeoutCountB": 2,
+    "traceHash": "0xbaaa00e443489d20a71afa7399ee4a8dd76d80b454b7d25f16b3994729de5a0b",
+    "simWinner": "B",
+    "simScoreA": 0.648676,
+    "simScoreB": 0.715564,
+    "compositeScoreA": 0.722123,
+    "compositeScoreB": 0.724735,
+    "compositeBreakdownA": {
+      "final": 0.722123,
+      "weights": {
+        "quality": 0.25,
+        "relevance": 0.25,
+        "potentialImpact": 0.2,
+        "novelty": 0.15,
+        "freshness": 0.15
+      },
+      "dimensions": {
+        "quality": 0.9,
+        "relevance": 0.688246,
+        "potentialImpact": 0.601206,
+        "novelty": 0.4,
+        "freshness": 0.965468
+      },
+      "diagnostics": {
+        "quality": [
+          "meta:+0.15",
+          "quant:+0.20"
+        ],
+        "relevance": {
+          "vectorScore01": 0.7353,
+          "tagHit": 2,
+          "activeTagCount": 4
+        },
+        "potentialImpact": {
+          "sim": 0.648676,
+          "fit": 0.5,
+          "typePrior": 0.58
+        },
+        "novelty": {
+          "maxSimilarity": 0.982644,
+          "nearestMemoryId": "mem_agentb_mn3k95lj",
+          "nearestSourceAgent": "agent-b"
+        },
+        "freshness": {
+          "ageDays": 0.3577,
+          "decay": 0.1
+        }
+      }
+    },
+    "compositeBreakdownB": {
+      "final": 0.724735,
+      "weights": {
+        "quality": 0.25,
+        "relevance": 0.25,
+        "potentialImpact": 0.2,
+        "novelty": 0.15,
+        "freshness": 0.15
+      },
+      "dimensions": {
+        "quality": 0.9,
+        "relevance": 0.666518,
+        "potentialImpact": 0.641338,
+        "novelty": 0.4,
+        "freshness": 0.965583
+      },
+      "diagnostics": {
+        "quality": [
+          "meta:+0.15",
+          "quant:+0.20"
+        ],
+        "relevance": {
+          "vectorScore01": 0.7081,
+          "tagHit": 2,
+          "activeTagCount": 4
+        },
+        "potentialImpact": {
+          "sim": 0.715564,
+          "fit": 0.5,
+          "typePrior": 0.58
+        },
+        "novelty": {
+          "maxSimilarity": 0.982644,
+          "nearestMemoryId": "mem_agenta_mn3k2jh8",
+          "nearestSourceAgent": "agent-a"
+        },
+        "freshness": {
+          "ageDays": 0.3564,
+          "decay": 0.1
+        }
+      }
+    },
+    "matchQuality": {
+      "tier": "medium",
+      "score": 0.65,
+      "benchmarkAligned": false,
+      "timeframeAligned": true,
+      "symbolOverlap": 1,
+      "riskDiff": 0
+    },
+    "matchWarnings": [
+      "BENCHMARK_MISMATCH"
+    ],
+    "fitnessWeight": 0.5
+  },
+  "proofRefTxHash": "0x51984faeefd86d81e9c2f1e94e5077f098834e20cf1aafa5e8d316b0a41aa440",
+  "relatedProofs": [
+    {
+      "txHash": "0x51984faeefd86d81e9c2f1e94e5077f098834e20cf1aafa5e8d316b0a41aa440",
+      "eventName": "BattleResult",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "RUN_BATTLE-1774323838395-hyfbc",
+      "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+      "memoryId": null,
+      "payloadHash": "0xa6171a4f4508f5619be5f6aaa87adbb801caf750b20be14afa4dbce8ac2ead7a",
+      "payloadJson": "{\"battleId\":\"01KMEZ0HCGFDMZE1NGH853YTQK\",\"winner\":\"B\",\"winnerAgentId\":\"agent-b\",\"scoreA\":0.722123,\"scoreB\":0.724735,\"simScoreA\":0.648676,\"simScoreB\":0.715564,\"resultHash\":\"0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c\"}",
+      "metaJson": "{\"requestId\":\"RUN_BATTLE-1774323838395-hyfbc\",\"battleId\":\"01KMEZ0HCGFDMZE1NGH853YTQK\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774323851,
+      "payload": {
+        "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+        "winner": "B",
+        "winnerAgentId": "agent-b",
+        "scoreA": 0.722123,
+        "scoreB": 0.724735,
+        "simScoreA": 0.648676,
+        "simScoreB": 0.715564,
+        "resultHash": "0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c"
+      },
+      "meta": {
+        "requestId": "RUN_BATTLE-1774323838395-hyfbc",
+        "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    }
+  ]
+}

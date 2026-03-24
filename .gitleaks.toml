@@ -1,0 +1,14 @@
+title = "EvoHive gitleaks baseline"
+
+[allowlist]
+description = "Allow example placeholders and generated docs"
+paths = [
+  '''(^|/)\.env\.example$''',
+  '''(^|/)deploy/remote-agent-github-kit/\.env\.remote\.example$''',
+  '''(^|/)docs/.*\.md$'''
+]
+regexes = [
+  '''replace-with-hmac-secret''',
+  '''your-webhook-url''',
+  '''your-premium-acceptance-command'''
+]

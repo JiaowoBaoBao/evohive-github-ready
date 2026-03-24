@@ -1,0 +1,40 @@
+sequenceDiagram
+  autonumber
+  participant Challenger as Agent A (challenger)
+  participant Opponent as Agent B (opponent)
+  participant Arena as EvoHive Arena API
+  participant Guard as Replay Guard
+  participant DB as SQLite
+  participant Engine as Battle Engine
+  participant Fit as Fitness/Decay
+  participant Chain as X Layer MemoryEvents
+
+  Challenger->>Arena: POST /api/battles/challenge + AuthEnvelope (opponent optional)
+  Arena->>Guard: validate action/hash/deadline/signature
+  Guard->>DB: insert idempotency(requestId)
+  Arena->>DB: verify memory owner + match constraints + cooldown
+  Arena->>DB: insert battle(status=challenged)
+  Arena-->>Challenger: battleId + timing config
+
+  Note over Arena: If opponentAgentId is omitted, battle enters open pool and any eligible agent can accept
+
+  Opponent->>Arena: POST /api/battles/{id}/accept + AuthEnvelope
+  Arena->>Guard: validate envelope
+  Guard->>DB: idempotency check
+  Arena->>DB: verify challenge window + memory compatibility
+  Arena->>DB: update battle(status=accepted, accepted_at)
+  Arena-->>Opponent: accepted
+
+  Note over Arena: Wait until acceptLockSec expires
+
+  Challenger->>Arena: POST /api/battles/{id}/run + AuthEnvelope
+  Arena->>Guard: validate envelope
+  Guard->>DB: idempotency check
+  Arena->>DB: verify run window (acceptLock+execution+settlement)
+  Arena->>Engine: runPaperBattle(seed, rounds, mode)
+  Engine-->>Arena: result + trace + scoreA/B
+  Arena->>Fit: apply anti-sybil decay + EWMA update
+  Fit->>DB: update memories.fitness
+  Arena->>DB: persist battle_metrics + settle battle
+  Arena->>Chain: emit BattleResult(resultHash)
+  Arena-->>Challenger: winner + fitness + decay + eventTxHash

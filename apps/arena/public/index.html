@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvoHive Panel</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>EvoHive 可视化面板</h1>
+        <div id="status">connecting...</div>
+      </div>
+      <div class="header-actions">
+        <label>视图
+          <select id="panelAgentView">
+            <option value="agent-a" selected>仅 Agent A</option>
+            <option value="agent-b">仅 Agent B</option>
+            <option value="both">双 Agent</option>
+          </select>
+        </label>
+        <label class="toggle-inline">
+          <input id="simpleMode" type="checkbox" checked />
+          简洁模式
+        </label>
+      </div>
+    </header>
+
+    <section class="overview-card">
+      <div class="overview-head">
+        <h2>运行总览</h2>
+        <div class="actions-row two">
+          <button data-action="quickRefresh">立即刷新</button>
+          <button data-action="toggleDiagnostics">显示诊断区</button>
+        </div>
+      </div>
+      <div class="overview-grid" id="overviewGrid">
+        <div class="overview-pill"><b>健康</b><span id="summaryHealth">加载中...</span></div>
+        <div class="overview-pill"><b>鉴权</b><span id="summaryAuth">加载中...</span></div>
+        <div class="overview-pill"><b>容量</b><span id="summaryCapacity">加载中...</span></div>
+        <div class="overview-pill"><b>待处理</b><span id="summaryPending">加载中...</span></div>
+        <div class="overview-pill"><b>告警</b><span id="summaryAlerts">加载中...</span></div>
+      </div>
+      <div class="overview-note" id="summaryHint">简洁模式：默认隐藏低频调试区，可切换到专业视图。</div>
+    </section>
+
+    <main class="layout">
+      <section class="agent" id="agentA">
+        <h2>Agent A（agent-a）</h2>
+
+        <div class="card secondary-card">
+          <h3>生成记忆片段</h3>
+          <label>Memory ID <input id="a-memoryId" placeholder="mem_spot_ax" /></label>
+          <label>Domain
+            <select id="a-domain">
+              <option>spot</option><option>perp</option><option selected>strategy</option><option>earn</option>
+            </select>
+          </label>
+          <label>Timeframe <input id="a-timeframe" value="1h" /></label>
+          <label>Risk
+            <select id="a-risk"><option>low</option><option selected>mid</option><option>high</option></select>
+          </label>
+          <label>手动补充特定内容（可选）
+            <input id="a-focus" placeholder="例如：X Layer低Gas DCA" />
+          </label>
+          <label>成功轨迹（trajectory_text）
+            <textarea id="a-trajectory" rows="5" placeholder="粘贴成功执行轨迹（用户指令、关键步骤、工具调用、结果）"></textarea>
+          </label>
+          <div class="actions-row two">
+            <button data-action="generateDraft" data-agent="agent-a">生成Procedural草稿</button>
+            <button data-action="commit" data-agent="agent-a">提交记忆上链</button>
+          </div>
+          <label>草稿列表（agent-a）
+            <select id="a-draftList" size="4"></select>
+          </label>
+          <button data-action="loadDraft" data-agent="agent-a">载入草稿到表单</button>
+          <pre id="a-memoryPreview" class="memory-preview"></pre>
+        </div>
+
+        <div class="card secondary-card">
+          <h3>记忆片段库（agent-a）</h3>
+          <select id="a-memoryList" size="6"></select>
+          <div class="actions-row">
+            <button data-action="transferToB" data-agent="agent-a">转移给 Agent B</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>发起匹配</h3>
+          <label>我的记忆 <select id="a-challengeMemory"></select></label>
+          <div class="actions-row two" style="margin-bottom:6px;">
+            <button data-action="openMemory" data-agent="agent-a">打开</button>
+            <button data-action="deleteMemory" data-agent="agent-a" class="danger">删除</button>
+          </div>
+          <pre id="a-memoryDetail" class="memory-preview compact-detail"></pre>
+          <label>匹配模式
+            <select id="a-matchMode">
+              <option value="sparring" selected>sparring（不限制同对手冷却/次数）</option>
+              <option value="ranked">ranked（启用同对手限制）</option>
+            </select>
+          </label>
+          <label class="round-config">回合（高级参数） <input id="a-rounds" type="number" min="1" max="50" value="10" /></label>
+          <button data-action="challenge" data-agent="agent-a">发起公开匹配</button>
+        </div>
+
+        <div class="card">
+          <h3>接受匹配</h3>
+          <label>待接受 Battle <select id="a-pendingBattle"></select></label>
+          <label>应战记忆 <select id="a-acceptMemory"></select></label>
+          <button data-action="accept" data-agent="agent-a">接受</button>
+          <button data-action="run" data-agent="agent-a">执行结算</button>
+        </div>
+
+        <div class="card">
+          <h3>蜂巢记忆库（统一访问）</h3>
+          <label>Domain 过滤（可选）
+            <select id="a-hiveDomain">
+              <option value="">全部</option>
+              <option>spot</option><option>perp</option><option selected>strategy</option><option>earn</option>
+            </select>
+          </label>
+          <label>关键词过滤（可选）
+            <input id="a-hiveQuery" placeholder="memoryId / symbol / hash" />
+          </label>
+          <button data-action="hiveBrowse" data-agent="agent-a">浏览蜂巢记忆库（免费）</button>
+          <label>蜂巢记忆（只显示元数据）
+            <select id="a-hiveMemoryList" size="6"></select>
+          </label>
+          <label>评分（1-5）
+            <input id="a-hiveScore" type="number" min="1" max="5" step="0.1" value="4" />
+          </label>
+          <label>评分备注（可选）
+            <input id="a-hiveScoreNote" placeholder="例如：回测稳定，滑点可控" />
+          </label>
+          <div class="actions-row two">
+            <button data-action="hiveClone" data-agent="agent-a">复制到本地（x402验证，可能产生费用）</button>
+            <button data-action="hiveRate" data-agent="agent-a">给该记忆打分</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="agent" id="agentB">
+        <h2>Agent B（agent-b）</h2>
+
+        <div class="card secondary-card">
+          <h3>生成记忆片段</h3>
+          <label>Memory ID <input id="b-memoryId" placeholder="mem_spot_bx" /></label>
+          <label>Domain
+            <select id="b-domain">
+              <option>spot</option><option>perp</option><option selected>strategy</option><option>earn</option>
+            </select>
+          </label>
+          <label>Timeframe <input id="b-timeframe" value="1h" /></label>
+          <label>Risk
+            <select id="b-risk"><option>low</option><option selected>mid</option><option>high</option></select>
+          </label>
+          <label>手动补充特定内容（可选）
+            <input id="b-focus" placeholder="例如：低滑点套利流程" />
+          </label>
+          <label>成功轨迹（trajectory_text）
+            <textarea id="b-trajectory" rows="5" placeholder="粘贴成功执行轨迹（用户指令、关键步骤、工具调用、结果）"></textarea>
+          </label>
+          <div class="actions-row two">
+            <button data-action="generateDraft" data-agent="agent-b">生成Procedural草稿</button>
+            <button data-action="commit" data-agent="agent-b">提交记忆上链</button>
+          </div>
+          <label>草稿列表（agent-b）
+            <select id="b-draftList" size="4"></select>
+          </label>
+          <button data-action="loadDraft" data-agent="agent-b">载入草稿到表单</button>
+          <pre id="b-memoryPreview" class="memory-preview"></pre>
+        </div>
+
+        <div class="card secondary-card">
+          <h3>记忆片段库（agent-b）</h3>
+          <select id="b-memoryList" size="6"></select>
+          <div class="actions-row">
+            <button data-action="transferToA" data-agent="agent-b">转移给 Agent A</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>发起匹配</h3>
+          <label>我的记忆 <select id="b-challengeMemory"></select></label>
+          <div class="actions-row two" style="margin-bottom:6px;">
+            <button data-action="openMemory" data-agent="agent-b">打开</button>
+            <button data-action="deleteMemory" data-agent="agent-b" class="danger">删除</button>
+          </div>
+          <pre id="b-memoryDetail" class="memory-preview compact-detail"></pre>
+          <label>匹配模式
+            <select id="b-matchMode">
+              <option value="sparring" selected>sparring（不限制同对手冷却/次数）</option>
+              <option value="ranked">ranked（启用同对手限制）</option>
+            </select>
+          </label>
+          <label class="round-config">回合（高级参数） <input id="b-rounds" type="number" min="1" max="50" value="10" /></label>
+          <button data-action="challenge" data-agent="agent-b">发起公开匹配</button>
+        </div>
+
+        <div class="card">
+          <h3>接受匹配</h3>
+          <label>待接受 Battle <select id="b-pendingBattle"></select></label>
+          <label>应战记忆 <select id="b-acceptMemory"></select></label>
+          <button data-action="accept" data-agent="agent-b">接受</button>
+          <button data-action="run" data-agent="agent-b">执行结算</button>
+        </div>
+
+        <div class="card">
+          <h3>蜂巢记忆库（统一访问）</h3>
+          <label>Domain 过滤（可选）
+            <select id="b-hiveDomain">
+              <option value="">全部</option>
+              <option>spot</option><option>perp</option><option selected>strategy</option><option>earn</option>
+            </select>
+          </label>
+          <label>关键词过滤（可选）
+            <input id="b-hiveQuery" placeholder="memoryId / symbol / hash" />
+          </label>
+          <button data-action="hiveBrowse" data-agent="agent-b">浏览蜂巢记忆库（免费）</button>
+          <label>蜂巢记忆（只显示元数据）
+            <select id="b-hiveMemoryList" size="6"></select>
+          </label>
+          <label>评分（1-5）
+            <input id="b-hiveScore" type="number" min="1" max="5" step="0.1" value="4" />
+          </label>
+          <label>评分备注（可选）
+            <input id="b-hiveScoreNote" placeholder="例如：信号清晰，执行收益明显" />
+          </label>
+          <div class="actions-row two">
+            <button data-action="hiveClone" data-agent="agent-b">复制到本地（x402验证，可能产生费用）</button>
+            <button data-action="hiveRate" data-agent="agent-b">给该记忆打分</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="system-card diagnostic-section" id="diagnosticSystem">
+      <h2>系统状态与证明工具</h2>
+      <div id="systemStatus" class="system-grid">loading...</div>
+      <div class="proof-tools">
+        <label>按 txHash 解码证明
+          <input id="proofTxHash" placeholder="0x..." />
+        </label>
+        <div class="actions-row two">
+          <button data-action="decodeProof">解码</button>
+          <button data-action="exportProofs">导出审计包</button>
+        </div>
+        <pre id="proofResult"></pre>
+      </div>
+      <div class="proof-tools" style="margin-top:10px;">
+        <div class="actions-row two">
+          <button data-action="refreshLeaderboards">刷新蜂巢榜单</button>
+          <button data-action="hiveBrowseAll">加载全部蜂巢记忆（双侧）</button>
+        </div>
+        <div class="system-grid" style="grid-template-columns:1fr 1fr; margin-top:10px;">
+          <div>
+            <h3 style="margin:0 0 8px 0; font-size:13px; color:#cbd5e1;">热度榜（复制次数）</h3>
+            <pre id="hiveHeatBoard"></pre>
+          </div>
+          <div>
+            <h3 style="margin:0 0 8px 0; font-size:13px; color:#cbd5e1;">评分榜（加权分）</h3>
+            <pre id="hiveRatingBoard"></pre>
+          </div>
+        </div>
+      </div>
+      <div class="proof-tools" style="margin-top:10px;">
+        <label>血缘查询 Memory ID
+          <input id="lineageMemoryId" placeholder="mem_hive_mut..." />
+        </label>
+        <div class="actions-row two">
+          <button data-action="showLineage">查看血缘</button>
+          <button data-action="showRecentRecombine">最近重组</button>
+        </div>
+        <pre id="hiveLineage"></pre>
+      </div>
+    </section>
+
+    <section class="log-card diagnostic-section" id="diagnosticLogs">
+      <h2>动态日志（链上/转移/蜂巢访问）</h2>
+      <div id="logs"></div>
+    </section>
+
+    <div id="memoryModal" class="memory-modal hidden" aria-hidden="true">
+      <div class="memory-modal-panel" role="dialog" aria-modal="true" aria-labelledby="memoryModalTitle">
+        <div class="memory-modal-head">
+          <h3 id="memoryModalTitle">记忆详情</h3>
+          <button id="memoryModalClose" type="button">关闭</button>
+        </div>
+        <pre id="memoryModalBody"></pre>
+      </div>
+    </div>
+
+    <div id="actionToast" class="action-toast hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="./panel.js"></script>
+  </body>
+</html>

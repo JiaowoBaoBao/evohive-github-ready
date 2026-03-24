@@ -1,0 +1,207 @@
+openapi: 3.0.3
+info:
+  title: EvoHive Arena API
+  version: 0.2.0
+servers:
+  - url: http://localhost:4310
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+
+  /api/system/status:
+    get:
+      summary: Runtime status card (mode, queue, circuit, reconciliation, security)
+
+  /api/ui/state:
+    get:
+      summary: Panel bootstrap state
+  /api/ui/logs:
+    get:
+      summary: Panel activity log feed
+  /api/ui/auth/sign:
+    post:
+      summary: Local panel auth envelope signer (for HMAC mode)
+
+  /api/memories/generate:
+    post:
+      summary: Generate draft memory fields from trajectory text
+  /api/memories/drafts:
+    get:
+      summary: List generated procedural drafts
+  /api/memories/drafts/{agentId}/{draftId}:
+    get:
+      summary: Get generated draft detail
+      parameters:
+        - in: path
+          name: agentId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: draftId
+          required: true
+          schema:
+            type: string
+
+  /api/memories/commit:
+    post:
+      summary: Commit a memory to local hive + emit MemoryRecorded proof
+  /api/memories/transfer:
+    post:
+      summary: Transfer memory ownership + emit MemoryTransferred proof
+  /api/memories/delete:
+    post:
+      summary: Soft-retire memory
+  /api/memories/detail/{memoryId}:
+    get:
+      summary: Memory detail (strategy body optional)
+      parameters:
+        - in: path
+          name: memoryId
+          required: true
+          schema:
+            type: string
+  /api/memories/search:
+    get:
+      summary: Semantic-like memory search (sqlite vector fallback)
+      parameters:
+        - in: query
+          name: q
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: domain
+          schema:
+            type: string
+        - in: query
+          name: limit
+          schema:
+            type: integer
+
+  /api/battles/challenge:
+    post:
+      summary: Challenge battle (supports open pool + matchMode ranked|sparring)
+  /api/battles/{battleId}/accept:
+    post:
+      summary: Accept challenge and submit opponent memory
+      parameters:
+        - in: path
+          name: battleId
+          required: true
+          schema:
+            type: string
+  /api/battles/{battleId}/run:
+    post:
+      summary: Run paper simulation rounds and settle result
+      parameters:
+        - in: path
+          name: battleId
+          required: true
+          schema:
+            type: string
+  /api/battles/{battleId}:
+    get:
+      summary: Get battle detail
+      parameters:
+        - in: path
+          name: battleId
+          required: true
+          schema:
+            type: string
+
+  /api/hive/memories:
+    get:
+      summary: Browse hive memory library (metadata/hashes)
+  /api/hive/memories/{memoryId}/clone:
+    post:
+      summary: Paid clone to local memory with x402 verify + anti-sybil burn + proof
+      parameters:
+        - in: path
+          name: memoryId
+          required: true
+          schema:
+            type: string
+  /api/hive/memories/{memoryId}/rate:
+    post:
+      summary: Rate hive memory (requires clone eligibility)
+      parameters:
+        - in: path
+          name: memoryId
+          required: true
+          schema:
+            type: string
+  /api/hive/memories/leaderboards:
+    get:
+      summary: Get heat/rating leaderboards
+  /api/hive/recombinations/recent:
+    get:
+      summary: List recent recombination lineage edges
+  /api/hive/memories/{memoryId}/lineage:
+    get:
+      summary: Get lineage graph for one memory
+      parameters:
+        - in: path
+          name: memoryId
+          required: true
+          schema:
+            type: string
+
+  /api/hive/buffs:
+    get:
+      summary: Legacy buffs view (compat only)
+      deprecated: true
+  /api/hive/buffs/premium:
+    post:
+      summary: Legacy premium endpoint (compat only)
+      deprecated: true
+
+  /api/proofs/search:
+    get:
+      summary: Search indexed proof events
+  /api/proofs/{txHash}/decode:
+    get:
+      summary: Decode indexed proof payload by tx hash
+      parameters:
+        - in: path
+          name: txHash
+          required: true
+          schema:
+            type: string
+  /api/proofs/export:
+    post:
+      summary: Export proof audit package to output/
+
+  /api/security/risk-token:
+    post:
+      summary: Issue one-time confirmation token for high-risk actions
+
+  /api/jobs/hive-recombine:
+    post:
+      summary: Trigger recombination + mutation for similar high-score hive memories
+  /api/jobs/hive-incubation:
+    post:
+      summary: Run incubation gate sweep (incubating -> active|retired)
+  /api/jobs/sweep:
+    post:
+      summary: Sweep memory lifecycle states
+  /api/jobs/sweep-battles:
+    post:
+      summary: Sweep battle timing windows and expire stale matches
+  /api/jobs/retry-onchain:
+    post:
+      summary: Process onchain retry queue jobs
+  /api/jobs/retry-maintenance:
+    post:
+      summary: Quarantine/archive retry queue items
+  /api/jobs/reconcile:
+    post:
+      summary: Reconcile burn/payment/proof consistency and store summary
+
+  /metrics:
+    get:
+      summary: Runtime metrics snapshot (includes queue + circuit)

@@ -1,0 +1,46 @@
+{
+  "acceptanceJson": "acceptance-2026-03-24T06-37-17.718Z.json",
+  "acceptanceMd": "acceptance-2026-03-24T06-37-17.718Z.md",
+  "proofAudit": "proof-audit-2026-03-24T06-37-51.940Z.json",
+  "battlePack": "battle-replay-pack.json",
+  "tx5": [
+    {
+      "eventName": "BattleResult",
+      "txHash": "0x51984faeefd86d81e9c2f1e94e5077f098834e20cf1aafa5e8d316b0a41aa440",
+      "requestId": "RUN_BATTLE-1774323838395-hyfbc",
+      "live": true
+    },
+    {
+      "eventName": "HiveMemoryCloned",
+      "txHash": "0x8d093c64cbd111dbe8f63e170001d81bc5f4c65c183c423f6573a6311b2fcff7",
+      "requestId": "CLONE_HIVE_MEMORY-1774324268708-ual8i",
+      "live": true
+    },
+    {
+      "eventName": "AntiSybilFeeBurned",
+      "txHash": "0x81e2b160db06dd76c29fab55fdd71c53816c08cb79ed21a29b75566fa6eaa883",
+      "requestId": "GET_PREMIUM_BUFF-1774290844553-8nux5h",
+      "live": true
+    },
+    {
+      "eventName": "MemoryRecorded",
+      "txHash": "0x1cde4c5a9922254b2c3f434719928af4ca13ca1ece46d7a4c5d4214c40bdd981",
+      "requestId": "COMMIT_MEMORY-1774295309117-a2n5aa",
+      "live": true
+    },
+    {
+      "eventName": "MemoryTransferred",
+      "txHash": "0x8a121f00f4586a16f35a15a2a755cc84f4a79f1e20b5be08ddbfe0ed1e1ffa25",
+      "requestId": "01JDEMOTRANSFER21774266785526",
+      "live": true
+    }
+  ],
+  "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+  "runRequestId": "RUN_BATTLE-1774323838395-hyfbc",
+  "resultHash": "0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c",
+  "traceHash": "0xbaaa00e443489d20a71afa7399ee4a8dd76d80b454b7d25f16b3994729de5a0b",
+  "winner": "B",
+  "scoreA": 0.722123,
+  "scoreB": 0.724735,
+  "marketSource": "rest"
+}

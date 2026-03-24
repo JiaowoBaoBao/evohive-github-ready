@@ -1,0 +1,1567 @@
+{
+  "generatedAt": "2026-03-24T06:37:51.940Z",
+  "range": {
+    "fromTs": null,
+    "toTs": null
+  },
+  "total": 23,
+  "proofs": [
+    {
+      "txHash": "0x8d093c64cbd111dbe8f63e170001d81bc5f4c65c183c423f6573a6311b2fcff7",
+      "eventName": "HiveMemoryCloned",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "CLONE_HIVE_MEMORY-1774324268708-ual8i",
+      "battleId": null,
+      "memoryId": null,
+      "payloadHash": "0x7dd08de5d63c3986640ba6f3c66b4c2115a1320541ad15a12bad3dafa56f7829",
+      "payloadJson": "{\"requestId\":\"CLONE_HIVE_MEMORY-1774324268708-ual8i\",\"sourceMemoryId\":\"mem_backup_01kme2mf4tesf9fr24852fwp78\",\"clonedMemoryId\":\"mem_hive_01kmezge02keh0xx5w1zqvapsc\",\"from\":\"hive/backup\",\"to\":\"agent-a\",\"amountUsdc\":0.001,\"burnAddress\":\"0x000000000000000000000000000000000000dEaD\",\"burnTxHash\":\"0xbaa9cb714ea24ff3ab67f2fcf75268998542eba27e7a3eadae436909231ad009\",\"paymentTxHash\":\"0x017afb6e547e37c1763d3ad45b296e6b1bcacb45c0851ff923e4de00342230b7\",\"paymentProofHash\":\"0x017afb6e547e37c1763d3ad45b296e6b1bcacb45c0851ff923e4de00342230b7\",\"paymentHashType\":\"proof\",\"note\":\"panel-hive-clone\",\"timestamp\":1774324299,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"CLONE_HIVE_MEMORY-1774324268708-ual8i\",\"memoryId\":\"mem_hive_01kmezge02keh0xx5w1zqvapsc\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774324301,
+      "payload": {
+        "requestId": "CLONE_HIVE_MEMORY-1774324268708-ual8i",
+        "sourceMemoryId": "mem_backup_01kme2mf4tesf9fr24852fwp78",
+        "clonedMemoryId": "mem_hive_01kmezge02keh0xx5w1zqvapsc",
+        "from": "hive/backup",
+        "to": "agent-a",
+        "amountUsdc": 0.001,
+        "burnAddress": "0x000000000000000000000000000000000000dEaD",
+        "burnTxHash": "0xbaa9cb714ea24ff3ab67f2fcf75268998542eba27e7a3eadae436909231ad009",
+        "paymentTxHash": "0x017afb6e547e37c1763d3ad45b296e6b1bcacb45c0851ff923e4de00342230b7",
+        "paymentProofHash": "0x017afb6e547e37c1763d3ad45b296e6b1bcacb45c0851ff923e4de00342230b7",
+        "paymentHashType": "proof",
+        "note": "panel-hive-clone",
+        "timestamp": 1774324299,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "CLONE_HIVE_MEMORY-1774324268708-ual8i",
+        "memoryId": "mem_hive_01kmezge02keh0xx5w1zqvapsc",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x51984faeefd86d81e9c2f1e94e5077f098834e20cf1aafa5e8d316b0a41aa440",
+      "eventName": "BattleResult",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "RUN_BATTLE-1774323838395-hyfbc",
+      "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+      "memoryId": null,
+      "payloadHash": "0xa6171a4f4508f5619be5f6aaa87adbb801caf750b20be14afa4dbce8ac2ead7a",
+      "payloadJson": "{\"battleId\":\"01KMEZ0HCGFDMZE1NGH853YTQK\",\"winner\":\"B\",\"winnerAgentId\":\"agent-b\",\"scoreA\":0.722123,\"scoreB\":0.724735,\"simScoreA\":0.648676,\"simScoreB\":0.715564,\"resultHash\":\"0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c\"}",
+      "metaJson": "{\"requestId\":\"RUN_BATTLE-1774323838395-hyfbc\",\"battleId\":\"01KMEZ0HCGFDMZE1NGH853YTQK\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774323851,
+      "payload": {
+        "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+        "winner": "B",
+        "winnerAgentId": "agent-b",
+        "scoreA": 0.722123,
+        "scoreB": 0.724735,
+        "simScoreA": 0.648676,
+        "simScoreB": 0.715564,
+        "resultHash": "0x5ec4bfbb5e0ca3151a7366a6cc9a958ef3507fb7813ed6925810f7a393b0a37c"
+      },
+      "meta": {
+        "requestId": "RUN_BATTLE-1774323838395-hyfbc",
+        "battleId": "01KMEZ0HCGFDMZE1NGH853YTQK",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x1cde4c5a9922254b2c3f434719928af4ca13ca1ece46d7a4c5d4214c40bdd981",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774295309117-a2n5aa",
+      "battleId": null,
+      "memoryId": "mem_delete_test_1774295309091",
+      "payloadHash": "0xf58297ef1906abd936bfc62d0de3e365848890cf6ebf8a31fd8c575c483fcda5",
+      "payloadJson": "{\"memoryId\":\"mem_delete_test_1774295309091\",\"memoryHash\":\"0x1212121212121212121212121212121212121212121212121212121212121212\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-v1.2\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"}],\"cid\":null,\"timestamp\":1774295309,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774295309117-a2n5aa\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774295310,
+      "payload": {
+        "memoryId": "mem_delete_test_1774295309091",
+        "memoryHash": "0x1212121212121212121212121212121212121212121212121212121212121212",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-v1.2"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774295309,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774295309117-a2n5aa",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0xa88b9bf65c2a6a1553e3a09f40bce7c4c72ae597781a5a6b273ffef8b60cf2c3",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774295254941-554mn0",
+      "battleId": null,
+      "memoryId": "mem_delete_ok_1774295254937",
+      "payloadHash": "0x8f74cb89146132ddd24ab5bf59a346f144fea7b73002e750725800438e32eba5",
+      "payloadJson": "{\"memoryId\":\"mem_delete_ok_1774295254937\",\"memoryHash\":\"0x3333333333333333333333333333333333333333333333333333333333333333\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-del-ok\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774295254,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774295254941-554mn0\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774295265,
+      "payload": {
+        "memoryId": "mem_delete_ok_1774295254937",
+        "memoryHash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-del-ok"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774295254,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774295254941-554mn0",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0xb7046be155e52af2aa1306e77bc45353dc3647c2831b3ad7022b4b90e35e64ce",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774295224544-54wd4e",
+      "battleId": null,
+      "memoryId": "mem_del_guard_1774295224529",
+      "payloadHash": "0x627e7dbc9688937a2a423f4246cbc753ed049890e6d71e2ca8a7c2e7cc3a476f",
+      "payloadJson": "{\"memoryId\":\"mem_del_guard_1774295224529\",\"memoryHash\":\"0x2222222222222222222222222222222222222222222222222222222222222222\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-del-guard\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774295224,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774295224544-54wd4e\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774295228,
+      "payload": {
+        "memoryId": "mem_del_guard_1774295224529",
+        "memoryHash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-del-guard"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774295224,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774295224544-54wd4e",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x0355e64113c3fd816d9bafbcf18b2160078cca4d361659010e91017397dfbbc4",
+      "eventName": "MemoryRecorded",
+      "eventSource": "degraded-local-proof",
+      "eventMode": "degraded-local",
+      "requestId": "COMMIT_MEMORY-1774295136344-zm7a61",
+      "battleId": null,
+      "memoryId": "mem_delete_test_1774295136337",
+      "payloadHash": "0x85106c0ea7cd269d2e544478c21572e5ee1a1ed74e71b44d65a861765848f22f",
+      "payloadJson": "{\"memoryId\":\"mem_delete_test_1774295136337\",\"memoryHash\":\"0x1111111111111111111111111111111111111111111111111111111111111111\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-del-v1\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"}],\"cid\":null,\"timestamp\":1774295136,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774295136344-zm7a61\",\"eventTxLive\":false,\"eventTarget\":null,\"rawSource\":\"degraded-local-proof\"}",
+      "createdAt": 1774295151,
+      "payload": {
+        "memoryId": "mem_delete_test_1774295136337",
+        "memoryHash": "0x1111111111111111111111111111111111111111111111111111111111111111",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-del-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774295136,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774295136344-zm7a61",
+        "eventTxLive": false,
+        "eventTarget": null,
+        "rawSource": "degraded-local-proof"
+      }
+    },
+    {
+      "txHash": "0x32a8ed9432f817e7b6374a15ad5b2f10f9cb2d2cf4991e95c5cdb9ae70e2f248",
+      "eventName": "MemoryRecorded",
+      "eventSource": "degraded-local-proof",
+      "eventMode": "degraded-local",
+      "requestId": "AUTO_EVOLVE_COPY:01KME2K8JX3QPX8HPNX9WZVKNB",
+      "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+      "memoryId": "mem_evo_01kme2mz3kyq400nnjkh7v20bh",
+      "payloadHash": "0xa0625960e6a84e05beaf2f125399ffe2fe7f141ffd94e67733ece5badfefc2ae",
+      "payloadJson": "{\"memoryId\":\"mem_evo_01kme2mz3kyq400nnjkh7v20bh\",\"memoryHash\":\"0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-b\",\"tags\":[\"AutoEvolve\",\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\",\"AutoEvolve\",\"strategy\",\"1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-relax-a\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"},{\"trait_type\":\"Tag\",\"value\":\"AutoEvolve\"},{\"trait_type\":\"AutoEvolve Source Battle\",\"value\":\"01KME2K8JX3QPX8HPNX9WZVKNB\"},{\"trait_type\":\"AutoEvolve Source Winner\",\"value\":\"agent-a\"}],\"cid\":null,\"timestamp\":1774294023,\"originMemoryId\":\"mem_relax_a_1774293979806\",\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"AUTO_EVOLVE_COPY:01KME2K8JX3QPX8HPNX9WZVKNB\",\"memoryId\":\"mem_evo_01kme2mz3kyq400nnjkh7v20bh\",\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"eventTxLive\":false,\"eventTarget\":null,\"rawSource\":\"degraded-local-proof\"}",
+      "createdAt": 1774294054,
+      "payload": {
+        "memoryId": "mem_evo_01kme2mz3kyq400nnjkh7v20bh",
+        "memoryHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-b",
+        "tags": [
+          "AutoEvolve",
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy",
+          "AutoEvolve",
+          "strategy",
+          "1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-relax-a"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "AutoEvolve"
+          },
+          {
+            "trait_type": "AutoEvolve Source Battle",
+            "value": "01KME2K8JX3QPX8HPNX9WZVKNB"
+          },
+          {
+            "trait_type": "AutoEvolve Source Winner",
+            "value": "agent-a"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774294023,
+        "originMemoryId": "mem_relax_a_1774293979806",
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "AUTO_EVOLVE_COPY:01KME2K8JX3QPX8HPNX9WZVKNB",
+        "memoryId": "mem_evo_01kme2mz3kyq400nnjkh7v20bh",
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "eventTxLive": false,
+        "eventTarget": null,
+        "rawSource": "degraded-local-proof"
+      }
+    },
+    {
+      "txHash": "0x4b3435537656d2884e7343623697007aecfc3f9860c375680fcc941aa75c0d26",
+      "eventName": "MemoryRecorded",
+      "eventSource": "degraded-local-proof",
+      "eventMode": "degraded-local",
+      "requestId": "AUTO_EVOLVE_BACKUP:01KME2K8JX3QPX8HPNX9WZVKNB",
+      "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+      "memoryId": "mem_backup_01kme2mf4tesf9fr24852fwp78",
+      "payloadHash": "0x83e6063d11764dba765918e9287b74a5afe150566b2b05f4266b8fd87ee01c9d",
+      "payloadJson": "{\"memoryId\":\"mem_backup_01kme2mf4tesf9fr24852fwp78\",\"memoryHash\":\"0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"hive/backup\",\"tags\":[\"AutoEvolveBackup\",\"strategy\",\"1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-relax-a\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"},{\"trait_type\":\"Tag\",\"value\":\"AutoEvolveBackup\"},{\"trait_type\":\"AutoEvolve Source Battle\",\"value\":\"01KME2K8JX3QPX8HPNX9WZVKNB\"},{\"trait_type\":\"AutoEvolve Source Winner\",\"value\":\"agent-a\"}],\"cid\":null,\"timestamp\":1774294023,\"originMemoryId\":\"mem_relax_a_1774293979806\",\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"AUTO_EVOLVE_BACKUP:01KME2K8JX3QPX8HPNX9WZVKNB\",\"memoryId\":\"mem_backup_01kme2mf4tesf9fr24852fwp78\",\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"eventTxLive\":false,\"eventTarget\":null,\"rawSource\":\"degraded-local-proof\"}",
+      "createdAt": 1774294039,
+      "payload": {
+        "memoryId": "mem_backup_01kme2mf4tesf9fr24852fwp78",
+        "memoryHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "hive/backup",
+        "tags": [
+          "AutoEvolveBackup",
+          "strategy",
+          "1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-relax-a"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "AutoEvolveBackup"
+          },
+          {
+            "trait_type": "AutoEvolve Source Battle",
+            "value": "01KME2K8JX3QPX8HPNX9WZVKNB"
+          },
+          {
+            "trait_type": "AutoEvolve Source Winner",
+            "value": "agent-a"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774294023,
+        "originMemoryId": "mem_relax_a_1774293979806",
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "AUTO_EVOLVE_BACKUP:01KME2K8JX3QPX8HPNX9WZVKNB",
+        "memoryId": "mem_backup_01kme2mf4tesf9fr24852fwp78",
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "eventTxLive": false,
+        "eventTarget": null,
+        "rawSource": "degraded-local-proof"
+      }
+    },
+    {
+      "txHash": "0xfc7e9a66d76b4b1a0b7f2c127a58674d50dd4fa46f213a7ee5c0e9b1f11dd35d",
+      "eventName": "BattleResult",
+      "eventSource": "degraded-local-proof",
+      "eventMode": "degraded-local",
+      "requestId": "RUN_BATTLE-1774293998945-j72507",
+      "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+      "memoryId": null,
+      "payloadHash": "0xd102777bb310316c6ebaaa91896a3d773d3693d5cdcb11ef8d623ab85183e619",
+      "payloadJson": "{\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"winner\":\"A\",\"winnerAgentId\":\"agent-a\",\"scoreA\":0.786614,\"scoreB\":0.758988,\"simScoreA\":0.638326,\"simScoreB\":0.611006,\"resultHash\":\"0xa137365afbb49122c26092f8880589eefc42a276286dc89fa82e5934fa4bd50c\"}",
+      "metaJson": "{\"requestId\":\"RUN_BATTLE-1774293998945-j72507\",\"battleId\":\"01KME2K8JX3QPX8HPNX9WZVKNB\",\"eventTxLive\":false,\"eventTarget\":null,\"rawSource\":\"degraded-local-proof\"}",
+      "createdAt": 1774294023,
+      "payload": {
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "winner": "A",
+        "winnerAgentId": "agent-a",
+        "scoreA": 0.786614,
+        "scoreB": 0.758988,
+        "simScoreA": 0.638326,
+        "simScoreB": 0.611006,
+        "resultHash": "0xa137365afbb49122c26092f8880589eefc42a276286dc89fa82e5934fa4bd50c"
+      },
+      "meta": {
+        "requestId": "RUN_BATTLE-1774293998945-j72507",
+        "battleId": "01KME2K8JX3QPX8HPNX9WZVKNB",
+        "eventTxLive": false,
+        "eventTarget": null,
+        "rawSource": "degraded-local-proof"
+      }
+    },
+    {
+      "txHash": "0x9b73ac982259add70b3e5b535cc757d8e51b148e82a8f8d1e6c945213772a530",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774293981064-8ujrjv",
+      "battleId": null,
+      "memoryId": "mem_relax_b_1774293979806",
+      "payloadHash": "0x41c42d096c2a5d88ab93283e12ec317250d0d89171737c0d5c113daf4d2a768e",
+      "payloadJson": "{\"memoryId\":\"mem_relax_b_1774293979806\",\"memoryHash\":\"0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-b\",\"tags\":[\"strategy\",\"risk:high\",\"tf:4h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"4h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"high\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-relax-b\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:high\"},{\"trait_type\":\"Tag\",\"value\":\"tf:4h\"}],\"cid\":null,\"timestamp\":1774293981,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774293981064-8ujrjv\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774293983,
+      "payload": {
+        "memoryId": "mem_relax_b_1774293979806",
+        "memoryHash": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-b",
+        "tags": [
+          "strategy",
+          "risk:high",
+          "tf:4h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "4h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "high"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-relax-b"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:high"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:4h"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774293981,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774293981064-8ujrjv",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x5ca0e5acd685013d582473013834f81a549543e7a096c238a346bc7862b3d5b3",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774293979825-o8gl37",
+      "battleId": null,
+      "memoryId": "mem_relax_a_1774293979806",
+      "payloadHash": "0xc890b76610f074b243e39e944c5187069c7f00fe21efdea5c0431d675e5af647",
+      "payloadJson": "{\"memoryId\":\"mem_relax_a_1774293979806\",\"memoryHash\":\"0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"bench-relax-a\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774293979,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774293979825-o8gl37\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774293981,
+      "payload": {
+        "memoryId": "mem_relax_a_1774293979806",
+        "memoryHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "bench-relax-a"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774293979,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774293979825-o8gl37",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x453f1788bee126388bb79d50ce921951e4a1b0826fea905fed73f91e922594d3",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774293042978-5n0lq",
+      "battleId": null,
+      "memoryId": "mem_agentb_mn3k95lj",
+      "payloadHash": "0xf40ae300dfc51332ea3a0ddc69be57ddf7a9df6322c77438543e16c8735d3a62",
+      "payloadJson": "{\"memoryId\":\"mem_agentb_mn3k95lj\",\"memoryHash\":\"0xa63dec35735d624fb70a7bf55e8d7cba0c366cbba3e9d37cd8b0dde007993742\",\"encryptedUriHash\":null,\"memoryType\":\"episodic\",\"memorySubType\":\"spot-episodic\",\"classifierConfidence\":0.67,\"agent\":\"agent-b\",\"tags\":[\"spot\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"episodic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"spot-episodic\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"traj-v1\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"},{\"trait_type\":\"Memory Type\",\"value\":\"procedural\"},{\"trait_type\":\"Title\",\"value\":\"EvoHive spot 执行流程（成功案例）\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Importance\",\"value\":\"94\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"procedural\"}],\"cid\":null,\"timestamp\":1774293042,\"strategyBodyHash\":\"0xfd9bd66a966d266db22a358678bdaadfff44d17afffd4d03d3bf9b6839f3965a\",\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774293042978-5n0lq\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774293046,
+      "payload": {
+        "memoryId": "mem_agentb_mn3k95lj",
+        "memoryHash": "0xa63dec35735d624fb70a7bf55e8d7cba0c366cbba3e9d37cd8b0dde007993742",
+        "encryptedUriHash": null,
+        "memoryType": "episodic",
+        "memorySubType": "spot-episodic",
+        "classifierConfidence": 0.67,
+        "agent": "agent-b",
+        "tags": [
+          "spot",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "episodic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "spot-episodic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "traj-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          },
+          {
+            "trait_type": "Memory Type",
+            "value": "procedural"
+          },
+          {
+            "trait_type": "Title",
+            "value": "EvoHive spot 执行流程（成功案例）"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Importance",
+            "value": "94"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "procedural"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774293042,
+        "strategyBodyHash": "0xfd9bd66a966d266db22a358678bdaadfff44d17afffd4d03d3bf9b6839f3965a",
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774293042978-5n0lq",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x66ae499fb50ff4b181d03c867580336092c14e156b5f45a420c4a6e6171bee17",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774292935703-8fdnp",
+      "battleId": null,
+      "memoryId": "mem_agenta_mn3k2jh8",
+      "payloadHash": "0x1e39470bfea6d63410ad7e1f6b3683ed9a4044fc249d2743544e866145e54da2",
+      "payloadJson": "{\"memoryId\":\"mem_agenta_mn3k2jh8\",\"memoryHash\":\"0xdc2d60e62e93e4d294cc9d02a72698e855862d109feb8c6feeb051275394069d\",\"encryptedUriHash\":null,\"memoryType\":\"episodic\",\"memorySubType\":\"spot-episodic\",\"classifierConfidence\":0.67,\"agent\":\"agent-a\",\"tags\":[\"spot\",\"risk:mid\",\"tf:1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"episodic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"spot-episodic\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"traj-v1\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Memory Type\",\"value\":\"procedural\"},{\"trait_type\":\"Title\",\"value\":\"EvoHive spot 执行流程（成功案例）\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Importance\",\"value\":\"94\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"procedural\"}],\"cid\":null,\"timestamp\":1774292935,\"strategyBodyHash\":\"0xf84b726b7adacfe6b286fc7593de49b649781929418c05454cb471d2c36d1a9e\",\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774292935703-8fdnp\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774292946,
+      "payload": {
+        "memoryId": "mem_agenta_mn3k2jh8",
+        "memoryHash": "0xdc2d60e62e93e4d294cc9d02a72698e855862d109feb8c6feeb051275394069d",
+        "encryptedUriHash": null,
+        "memoryType": "episodic",
+        "memorySubType": "spot-episodic",
+        "classifierConfidence": 0.67,
+        "agent": "agent-a",
+        "tags": [
+          "spot",
+          "risk:mid",
+          "tf:1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "episodic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "spot-episodic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "traj-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Memory Type",
+            "value": "procedural"
+          },
+          {
+            "trait_type": "Title",
+            "value": "EvoHive spot 执行流程（成功案例）"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Importance",
+            "value": "94"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "procedural"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774292935,
+        "strategyBodyHash": "0xf84b726b7adacfe6b286fc7593de49b649781929418c05454cb471d2c36d1a9e",
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774292935703-8fdnp",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x81e2b160db06dd76c29fab55fdd71c53816c08cb79ed21a29b75566fa6eaa883",
+      "eventName": "AntiSybilFeeBurned",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "GET_PREMIUM_BUFF-1774290844553-8nux5h",
+      "battleId": null,
+      "memoryId": null,
+      "payloadHash": "0xccfbbd96f28652d3bd31e4d5780e66be43f5e3a6bba8337e61095d2670e59805",
+      "payloadJson": "{\"requestId\":\"GET_PREMIUM_BUFF-1774290844553-8nux5h\",\"payer\":\"agent-a\",\"amountUsdc\":0.001,\"burnAddress\":\"0x000000000000000000000000000000000000dEaD\",\"burnTxHash\":\"0xc1c2618285a1a093f202a20a83a8783932c439ff685f60a502bca53c68677b25\"}",
+      "metaJson": "{\"requestId\":\"GET_PREMIUM_BUFF-1774290844553-8nux5h\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774290881,
+      "payload": {
+        "requestId": "GET_PREMIUM_BUFF-1774290844553-8nux5h",
+        "payer": "agent-a",
+        "amountUsdc": 0.001,
+        "burnAddress": "0x000000000000000000000000000000000000dEaD",
+        "burnTxHash": "0xc1c2618285a1a093f202a20a83a8783932c439ff685f60a502bca53c68677b25"
+      },
+      "meta": {
+        "requestId": "GET_PREMIUM_BUFF-1774290844553-8nux5h",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x893c50edc1be53d9090a7165a30ff6175566daaf95b597cd242f04c2900a5f1d",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774276550932-i9lcuc",
+      "battleId": null,
+      "memoryId": "mem_pool_a_1774276550917",
+      "payloadHash": "0x77f8beadb6fd9567caa3f1c7af4e8bd1c3a6ba55024f772f3769094da120e72a",
+      "payloadJson": "{\"memoryId\":\"mem_pool_a_1774276550917\",\"memoryHash\":\"0xcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"pool-bench-v1\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774276550,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774276550932-i9lcuc\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774276579,
+      "payload": {
+        "memoryId": "mem_pool_a_1774276550917",
+        "memoryHash": "0xcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "pool-bench-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774276550,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774276550932-i9lcuc",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0xd59a3a39a7776c2a4000543c9488b3eceb6f1afdda5308cf7c8b4175cf31ed25",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774276469468-hppgww",
+      "battleId": null,
+      "memoryId": "mem_pool_b_1774276459890",
+      "payloadHash": "0xb4e323159d6c30d50b35d3efef5db8dfffc3455ebac0153638517da32a8e751c",
+      "payloadJson": "{\"memoryId\":\"mem_pool_b_1774276459890\",\"memoryHash\":\"0xabababababababababababababababababababababababababababababababab\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-b\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"pool-bench-v1\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774276469,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774276469468-hppgww\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774276471,
+      "payload": {
+        "memoryId": "mem_pool_b_1774276459890",
+        "memoryHash": "0xabababababababababababababababababababababababababababababababab",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-b",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "pool-bench-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774276469,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774276469468-hppgww",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x93d8daf4c383643eed2dccc3a42c6da964f759e11dc363db1b73c04ed46be537",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774276459905-6y0vop",
+      "battleId": null,
+      "memoryId": "mem_pool_a_1774276459890",
+      "payloadHash": "0xfbdfd5bd6376ed5afaab5a154414b68938ecd0984a37ce2b7003b2435d84dd49",
+      "payloadJson": "{\"memoryId\":\"mem_pool_a_1774276459890\",\"memoryHash\":\"0xabababababababababababababababababababababababababababababababab\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"strategy-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"strategy\",\"risk:mid\",\"tf:1h\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"strategy-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"strategy\"},{\"trait_type\":\"Timeframe\",\"value\":\"1h\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"pool-bench-v1\"},{\"trait_type\":\"Tag\",\"value\":\"strategy\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1h\"}],\"cid\":null,\"timestamp\":1774276459,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774276459905-6y0vop\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774276469,
+      "payload": {
+        "memoryId": "mem_pool_a_1774276459890",
+        "memoryHash": "0xabababababababababababababababababababababababababababababababab",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "strategy-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "strategy",
+          "risk:mid",
+          "tf:1h"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "strategy-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1h"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "pool-bench-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "strategy"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1h"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774276459,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774276459905-6y0vop",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x3de21353a00d7d337e3d5f88bda9b65dc51e6031ea898a805e645113feb38bcd",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "COMMIT_MEMORY-1774266831167-k8sbau",
+      "battleId": null,
+      "memoryId": "mem-auth-check-1774266831151",
+      "payloadHash": "0xa2c4bec98dbda923616f7d4a48568ba116188fe3946d6eccd2eb8dea37da26e9",
+      "payloadJson": "{\"memoryId\":\"mem-auth-check-1774266831151\",\"memoryHash\":\"0xabababababababababababababababababababababababababababababababab\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"spot-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"spot\",\"risk:low\",\"tf:1m\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"spot-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"1m\"},{\"trait_type\":\"Risk Profile\",\"value\":\"low\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"auth-check-v1\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"risk:low\"},{\"trait_type\":\"Tag\",\"value\":\"tf:1m\"}],\"cid\":null,\"timestamp\":1774266831,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"COMMIT_MEMORY-1774266831167-k8sbau\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774266832,
+      "payload": {
+        "memoryId": "mem-auth-check-1774266831151",
+        "memoryHash": "0xabababababababababababababababababababababababababababababababab",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "spot-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "spot",
+          "risk:low",
+          "tf:1m"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "spot-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "1m"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "low"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "auth-check-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:low"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:1m"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774266831,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "COMMIT_MEMORY-1774266831167-k8sbau",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0xeef8028bf9e7c1d613252879820a6cf85b104d56aeb24a8ed96c8167a0814ef5",
+      "eventName": "BattleResult",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "01JDEMORUN1774266785526",
+      "battleId": "01KMD8NP8HG4RXCAQXXJN23613",
+      "memoryId": null,
+      "payloadHash": "0x35b818f8a8a2fe849fc0b1d95d2ead0f8729ca4e0571e7cfd639856743fbbfd1",
+      "payloadJson": "{\"battleId\":\"01KMD8NP8HG4RXCAQXXJN23613\",\"winner\":\"A\",\"winnerAgentId\":\"agent-b\",\"scoreA\":0.695596,\"scoreB\":0.683633,\"simScoreA\":0.72411,\"simScoreB\":0.641086,\"resultHash\":\"0x3d60a3e07100494f0b75a5250f7a545b698ba352e6db637e51e740741154855a\"}",
+      "metaJson": "{\"requestId\":\"01JDEMORUN1774266785526\",\"battleId\":\"01KMD8NP8HG4RXCAQXXJN23613\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774266819,
+      "payload": {
+        "battleId": "01KMD8NP8HG4RXCAQXXJN23613",
+        "winner": "A",
+        "winnerAgentId": "agent-b",
+        "scoreA": 0.695596,
+        "scoreB": 0.683633,
+        "simScoreA": 0.72411,
+        "simScoreB": 0.641086,
+        "resultHash": "0x3d60a3e07100494f0b75a5250f7a545b698ba352e6db637e51e740741154855a"
+      },
+      "meta": {
+        "requestId": "01JDEMORUN1774266785526",
+        "battleId": "01KMD8NP8HG4RXCAQXXJN23613",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x8a121f00f4586a16f35a15a2a755cc84f4a79f1e20b5be08ddbfe0ed1e1ffa25",
+      "eventName": "MemoryTransferred",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "01JDEMOTRANSFER21774266785526",
+      "battleId": null,
+      "memoryId": "mem_spot_b1",
+      "payloadHash": "0x68da780a84f9db382fd06cfe275979bd772311e6fa0a09c996103471c009c2d8",
+      "payloadJson": "{\"memoryId\":\"mem_spot_b1\",\"memoryHash\":\"0xspotb1\",\"from\":\"agent-b\",\"to\":\"agent-a\",\"operator\":\"agent-b\",\"note\":\"demo handoff B->A\",\"timestamp\":1774266788,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"01JDEMOTRANSFER21774266785526\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774266800,
+      "payload": {
+        "memoryId": "mem_spot_b1",
+        "memoryHash": "0xspotb1",
+        "from": "agent-b",
+        "to": "agent-a",
+        "operator": "agent-b",
+        "note": "demo handoff B->A",
+        "timestamp": 1774266788,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "01JDEMOTRANSFER21774266785526",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x3395b35fb4f74597620c78884abf49a5bfc63cbf2f1af00bbdea4fe6a6833b22",
+      "eventName": "MemoryTransferred",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "01JDEMOTRANSFER11774266785526",
+      "battleId": null,
+      "memoryId": "mem_spot_a1",
+      "payloadHash": "0xc2de6532c41ac5327eb394fef6a826e657bbddd1a14011b31a913b1cd557a8f7",
+      "payloadJson": "{\"memoryId\":\"mem_spot_a1\",\"memoryHash\":\"0xspota1\",\"from\":\"agent-a\",\"to\":\"agent-b\",\"operator\":\"agent-a\",\"note\":\"demo handoff A->B\",\"timestamp\":1774266785,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"01JDEMOTRANSFER11774266785526\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774266788,
+      "payload": {
+        "memoryId": "mem_spot_a1",
+        "memoryHash": "0xspota1",
+        "from": "agent-a",
+        "to": "agent-b",
+        "operator": "agent-a",
+        "note": "demo handoff A->B",
+        "timestamp": 1774266785,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "01JDEMOTRANSFER11774266785526",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0x1bda65a2da25e3dc61c052b7a20739ef18971ef548685c0d84bf2ae9ced0fffd",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "01JEVENTCHECK17742575293612",
+      "battleId": null,
+      "memoryId": "mem-event-check-1774257529361-2",
+      "payloadHash": "0xdfa42ab417e654f53f0e06a9fa8f9d40ffbe48c37b190df1a64a4a96d4f94ba6",
+      "payloadJson": "{\"memoryId\":\"mem-event-check-1774257529361-2\",\"memoryHash\":\"0xf5bed8a7cfb97266aff64b7287713ab0\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"spot-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"spot\",\"risk:mid\",\"tf:15m\",\"Trading Strategy\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"spot-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"15m\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"event-check-v1\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:15m\"},{\"trait_type\":\"Tag\",\"value\":\"Trading Strategy\"}],\"cid\":null,\"timestamp\":1774257529,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"01JEVENTCHECK17742575293612\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774257534,
+      "payload": {
+        "memoryId": "mem-event-check-1774257529361-2",
+        "memoryHash": "0xf5bed8a7cfb97266aff64b7287713ab0",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "spot-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "spot",
+          "risk:mid",
+          "tf:15m",
+          "Trading Strategy"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "spot-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "15m"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "event-check-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:15m"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "Trading Strategy"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774257529,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "01JEVENTCHECK17742575293612",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    },
+    {
+      "txHash": "0xf39d7f623c31ead48283c9f89292b8350964b96b56e0d2468afa3261b03202a9",
+      "eventName": "MemoryRecorded",
+      "eventSource": "skill-cmd",
+      "eventMode": "calldata-only",
+      "requestId": "01JEVENTCHECK17742575277481",
+      "battleId": null,
+      "memoryId": "mem-event-check-1774257527748-1",
+      "payloadHash": "0x9dd8f398b8b6037a0ebee121eb2868c72e9f589e8c89e15b49fddbaa38b2fdb3",
+      "payloadJson": "{\"memoryId\":\"mem-event-check-1774257527748-1\",\"memoryHash\":\"0xa02cec8e5214c33a44f9fb20ecd89bb8\",\"encryptedUriHash\":null,\"memoryType\":\"semantic\",\"memorySubType\":\"spot-semantic\",\"classifierConfidence\":0.55,\"agent\":\"agent-a\",\"tags\":[\"spot\",\"risk:mid\",\"tf:15m\"],\"attributes\":[{\"trait_type\":\"Memory Type\",\"value\":\"semantic\"},{\"trait_type\":\"Memory SubType\",\"value\":\"spot-semantic\"},{\"trait_type\":\"Domain\",\"value\":\"spot\"},{\"trait_type\":\"Timeframe\",\"value\":\"15m\"},{\"trait_type\":\"Risk Profile\",\"value\":\"mid\"},{\"trait_type\":\"Benchmark Version\",\"value\":\"event-check-v1\"},{\"trait_type\":\"Tag\",\"value\":\"spot\"},{\"trait_type\":\"Tag\",\"value\":\"risk:mid\"},{\"trait_type\":\"Tag\",\"value\":\"tf:15m\"}],\"cid\":null,\"timestamp\":1774257527,\"strategyBodyHash\":null,\"strategyNoteHash\":null}",
+      "metaJson": "{\"requestId\":\"01JEVENTCHECK17742575277481\",\"eventTxLive\":true,\"eventTarget\":\"0x7409433E84aD35a5c55e62B5B388490da6BEE96c\",\"rawSource\":\"skill-cmd\"}",
+      "createdAt": 1774257529,
+      "payload": {
+        "memoryId": "mem-event-check-1774257527748-1",
+        "memoryHash": "0xa02cec8e5214c33a44f9fb20ecd89bb8",
+        "encryptedUriHash": null,
+        "memoryType": "semantic",
+        "memorySubType": "spot-semantic",
+        "classifierConfidence": 0.55,
+        "agent": "agent-a",
+        "tags": [
+          "spot",
+          "risk:mid",
+          "tf:15m"
+        ],
+        "attributes": [
+          {
+            "trait_type": "Memory Type",
+            "value": "semantic"
+          },
+          {
+            "trait_type": "Memory SubType",
+            "value": "spot-semantic"
+          },
+          {
+            "trait_type": "Domain",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Timeframe",
+            "value": "15m"
+          },
+          {
+            "trait_type": "Risk Profile",
+            "value": "mid"
+          },
+          {
+            "trait_type": "Benchmark Version",
+            "value": "event-check-v1"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "spot"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "risk:mid"
+          },
+          {
+            "trait_type": "Tag",
+            "value": "tf:15m"
+          }
+        ],
+        "cid": null,
+        "timestamp": 1774257527,
+        "strategyBodyHash": null,
+        "strategyNoteHash": null
+      },
+      "meta": {
+        "requestId": "01JEVENTCHECK17742575277481",
+        "eventTxLive": true,
+        "eventTarget": "0x7409433E84aD35a5c55e62B5B388490da6BEE96c",
+        "rawSource": "skill-cmd"
+      }
+    }
+  ]
+}

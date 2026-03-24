@@ -1,0 +1,32 @@
+{
+  "name": "evohive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EvoHive - single-machine multi-agent evolution arena with X Layer event proofs",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @evohive/arena",
+    "start": "npm run start -w @evohive/arena",
+    "reset-demo": "node scripts/reset-demo.js",
+    "seed-demo": "npm run reset-demo && node scripts/seed-demo.js",
+    "seed": "npm run seed-demo",
+    "preflight": "node scripts/preflight-check.js",
+    "demo": "node scripts/demo-run.js",
+    "sign-eip712": "node scripts/eip712-sign.js",
+    "event-hook": "node scripts/onchainos-event-hook.js",
+    "event-check": "node scripts/event-check.js",
+    "acceptance": "node scripts/live-acceptance.js",
+    "regression": "node scripts/regression-matrix.js",
+    "ci:regression": "node scripts/regression-matrix.js",
+    "panel:start": "bash scripts/panelctl.sh start",
+    "panel:stop": "bash scripts/panelctl.sh stop",
+    "panel:status": "bash scripts/panelctl.sh status",
+    "panel:logs": "bash scripts/panelctl.sh logs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
