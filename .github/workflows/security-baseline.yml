@@ -1,0 +1,46 @@
+name: security-baseline
+
+on:
+pull_request:
+push:
+branches:
+- main
+- master
+workflow_dispatch:
+
+permissions:
+contents: read
+
+jobs:
+privacy-preflight:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout
+uses: actions/checkout@v4
+
+- name: Run privacy preflight
+shell: bash
+run: |
+set -euo pipefail
+bash deploy/remote-agent-github-kit/privacy-preflight.sh
+
+gitleaks-scan:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout
+uses: actions/checkout@v4
+
+- name: Install gitleaks
+shell: bash
+run: |
+set -euo pipefail
+VERSION="8.24.2"
+curl -sSL "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz" -o /tmp/gitleaks.tgz
+tar -xzf /tmp/gitleaks.tgz -C /tmp
+chmod +x /tmp/gitleaks
+
+- name: Scan repository for secrets
+shell: bash
+run: |
+set -euo pipefail
+/tmp/gitleaks detect --source . --no-git --redact --config .gitleaks.toml
