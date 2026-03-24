@@ -33,8 +33,12 @@ fi
 echo
 printf '%s\n' "[check] high-risk secret patterns in tracked files"
 # prefer low false positives: detect concrete secret-looking values
-secret_regex='(BEGIN (RSA|EC|OPENSSH)? ?PRIVATE KEY|AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|xox[baprs]-[A-Za-z0-9-]{20,}|sk_live_[A-Za-z0-9]{16,}|mnemonic\s*[:=]\s*"?[a-z]+( [a-z]+){8,}|(api|secret|token|private)[_-]?(key|token|secret)?\s*[:=]\s*["\x27]?[A-Za-z0-9_\-]{24,})'
-secret_hits="$(git grep -nEI "$secret_regex" -- . ':!*.md' ':!.env.example' || true)"
+secret_regex='(BEGIN (RSA|EC|OPENSSH)? ?PRIVATE KEY|AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|xox[baprs]-[A-Za-z0-9-]{20,}|sk_live_[A-Za-z0-9]{16,}|mnemonic\s*[:=]\s*"?[a-z]+( [a-z]+){8,}|(api|secret|token|private)[_-]?(key|token|secret)?\s*[:=]\s*["\x27][A-Za-z0-9_\-]{24,}["\x27])'
+secret_hits_raw="$(git grep -nEI "$secret_regex" -- . ':!*.md' ':!.env.example' || true)"
+
+# reduce known false positives from safe function calls (non-literal values)
+secret_hits="$(printf '%s\n' "$secret_hits_raw" | grep -Ev 'resolveHmacSecretForSigning\(auth\)' || true)"
+
 if [[ -n "$secret_hits" ]]; then
   echo "[WARN] Potential secret values found (review manually):"
   echo "$secret_hits"
